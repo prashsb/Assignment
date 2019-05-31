@@ -5,7 +5,7 @@ Some description regarding this assignement
 # 1. The JSON reply we are getting from API can be Checked from below link
 [JSON Response from API](https://my-json-server.typicode.com/prashsb/data/db)
 
-This dummy API is created with the help of  [my-json-server](https://my-json-server.typicode.com/prashsb/data/db) this web site.
+This dummy API is created with the help of  [my-json-server](https://my-json-server.typicode.com) this web site.
 
 This API is called using [Retrofit library](https://square.github.io/retrofit/)
 
