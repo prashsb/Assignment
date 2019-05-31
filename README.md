@@ -21,7 +21,7 @@ In Model Directory there are 3 Pojos
 which contains state name, latitude, longitude, total applicants from that state, and applicants details.
 2. [applicants_data](https://github.com/prashsb/Assignment/blob/master/app/src/main/java/com/winjit/assignement/model/applicants_data.java) where you will get all the detaisl of applicants like name, address, etc.
 
-3 [applicants_data](https://github.com/prashsb/Assignment/blob/master/app/src/main/java/com/winjit/assignement/model/Rest_model.java) this pojo is used as serializer to the data from server
+3 [Rest_model](https://github.com/prashsb/Assignment/blob/master/app/src/main/java/com/winjit/assignement/model/Rest_model.java) this pojo is used as serializer to the data from server
 
 
 # Setting Up the Retrofit Interface
