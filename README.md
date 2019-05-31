@@ -20,13 +20,14 @@ In Model Directory there are 3 Pojos
 1. [state_data](https://github.com/prashsb/Assignment/blob/master/app/src/main/java/com/winjit/assignement/model/state_data.java) where you will find the details of states fetched from server.
 which contains state name, latitude, longitude, total applicants from that state, and applicants details.
 2. [applicants_data](https://github.com/prashsb/Assignment/blob/master/app/src/main/java/com/winjit/assignement/model/applicants_data.java) where you will get all the detaisl of applicants like name, address, etc.
+
 3 [applicants_data](https://github.com/prashsb/Assignment/blob/master/app/src/main/java/com/winjit/assignement/model/Rest_model.java) this pojo is used as serializer to the data from server
 
 
 # Setting Up the Retrofit Interface
 In Api directory Retrofit interface and end points are given to fetch the data
 
-[applicants_data](https://github.com/prashsb/Assignment/blob/master/app/src/main/java/com/winjit/assignement/MainInterfaces.java) This This interface consists the three inner interfaces named presenter, View, Model.
+[MainInterfaces](https://github.com/prashsb/Assignment/blob/master/app/src/main/java/com/winjit/assignement/MainInterfaces.java) This interface consists the three inner interfaces named presenter, View, Model.
 
 presenter: This interface callbacks will be called when the view is destroyed onDestroy() and requesting the data from the server requestDataFromServer() for the first time when the activity is created.
 
@@ -35,7 +36,7 @@ View: The interface callback will be called when the user need to show/hide the 
 Model: Intractors are built for fetching the data from the database, webservices or any other data source. This interface callback has one inner interface named onFinishedListener{..} which will be called when the webservices response in finished or the response is failure onFinished(…) and onFailure(…). And it also has another callback named getMainData(onFinishListener …) that has the onFinishListener interface as a constructor.
 
 # DataListModel.java
-This class implements the MainAcontract.GetNoticeIntractor Interface which includes the overridden methoid getMainData(). This class is responsible to get data using the rest apis using retrofit library and pass data through onFinishedListener callback.
+This class implements the MainInterfaces.Model Interface which includes the overridden method getMainData(). This class is responsible to get data using the rest apis using retrofit library and pass data through onFinishedListener callback.
 
 # DataPresenter.java
 This class is responsible to act as the middle man between View and Model. It retrieves data from the Model and returns it formatted to the View and it also decides what happens when you interact with the View.
